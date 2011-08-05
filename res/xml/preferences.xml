@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="First preferences category">
+		<CheckBoxPreference
+			android:defaultValue="false"
+			android:summary="Checkbox field"
+			android:key="checkbox"
+			android:title="Checkbox" />
+		<EditTextPreference
+			android:dialogTitle="Dialog title"
+			android:key="edittext"
+			android:summary="EditText field"
+			android:positiveButtonText="OK"
+			android:negativeButtonText="Cancel"
+			android:dialogMessage="Dialog text content"
+			android:title="EditText" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Second preferences category">
+		<ListPreference
+			android:key="list"
+			android:dialogTitle="Dialog title"
+			android:title="ListPreference"
+			android:entries="@array/list_options"
+			android:entryValues="@array/list_values_options"
+			android:summary="Pole typu ListPreference" />
+	</PreferenceCategory>
+	<PreferenceScreen
+		android:key="prefScreen"
+		android:title="PreferenceScreen"
+		android:summary="Next preference screen">
+		<Preference
+			android:key="preference"
+			android:title="Preference"
+			android:summary="Preference field" />
+	</PreferenceScreen>
+</PreferenceScreen>
